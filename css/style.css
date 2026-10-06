@@ -1,0 +1,176 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #555555;
+}
+
+h1 {
+  color: #ffffff;
+}
+
+h2 {
+  color: #556B2F;
+}
+
+h3 {
+  color: #000000;
+}
+
+header {
+  background-color: #555555;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+footer {
+    background-color: #333333;
+}
+
+/* Navbar */
+ul.topnav {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333333;
+}
+
+ul.topnav li a {
+  display: block;
+  color: #f1f1f1;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover {
+  background-color: #D2B48C;
+  color: black;
+}
+
+ul.topnav li a.active {
+    background-color: #556B2F;
+    color: white;
+}
+
+/* Main */
+main {
+  min-height: calc(100vh - 130px);
+  background-color: #555555;
+  padding: 30px 0;
+}
+
+/* Content */
+.content {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: white;
+  min-height: 500px;
+}
+
+/* Whoami */
+.container {
+    display: flex;
+    gap: 30px;
+}
+
+.container > div {
+    flex: 1;
+}
+
+/* Projecten */
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project-box {
+    flex: 1 1 calc(50% - 20px);
+    min-height: 200px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #eeeeee;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.project-box:hover {
+    background-color: #dddddd;
+    transform: scale(1.02);
+}
+
+.project-box h3 {
+    margin: 0;
+}
+
+.project-content {
+    display: none;
+    width: 100%;
+    min-height: 500px;
+    padding: 30px;
+
+    background-color: #ffffff;
+}
+
+.project-content button {
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+/* Blog */
+.accordion {
+  background-color: #eeeeee;
+  color: #444444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #D2B48C;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: #ffffff;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+@media (max-width: 480px) {
+    .container {
+        flex-direction: column;
+    }
+
+        ul.topnav {
+        flex-direction: column;
+    }
+
+    .project-box {
+        flex: 1 1 auto;
+        width: 100%;
+    }
+}
