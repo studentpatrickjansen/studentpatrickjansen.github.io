@@ -174,3 +174,18 @@ main {
         width: 100%;
     }
 }
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+        ul.topnav {
+        flex-direction: column;
+    }
+
+    .project-box {
+        flex: 1 1 auto;
+        width: 100%;
+    }
+}
