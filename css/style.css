@@ -31,8 +31,40 @@ header {
   color: white;
 }
 
+/* Footer */
 footer {
-    background-color: #333333;
+  background-color: #333333;
+  color: white;
+  padding: 30px 5%;
+}
+
+/* Footer columns */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-box {
+  flex: 1;
+}
+
+.footer-box h3 {
+  color: #556B2F;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.footer-box a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-box a:hover {
+  text-decoration: underline;
+  color: #D2B48C;
 }
 
 /* Navbar */
@@ -46,7 +78,7 @@ ul.topnav {
 
 ul.topnav li a {
   display: block;
-  color: #f1f1f1;
+  color: #ffffff;
   padding: 14px 16px;
   text-decoration: none;
 }
@@ -84,8 +116,9 @@ main {
     gap: 30px;
 }
 
-.container > div {
+.container > section {
     flex: 1;
+    min-width: 0;
 }
 
 /* Projecten */
@@ -160,9 +193,28 @@ main {
   transition: max-height 0.2s ease-out;
 }
 
+.articles {
+  margin: 10px;
+  padding: 5px;
+  background-color: #cccccc;
+}
+
+.article-item {
+  margin: 10px;
+  background-color: #ffffff;
+}
+
+.article-item h3, p{
+  margin: 4px;
+}
+
 @media (max-width: 480px) {
     .container {
         flex-direction: column;
+    }
+
+    .container > section {
+        width: 100%;
     }
 
         ul.topnav {
@@ -172,6 +224,11 @@ main {
     .project-box {
         flex: 1 1 auto;
         width: 100%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        gap: 20px;
     }
 }
 
@@ -179,6 +236,10 @@ main {
     .container {
         flex-direction: column;
     }
+    
+    .container > section {
+        width: 100%;
+    }
 
         ul.topnav {
         flex-direction: column;
@@ -187,5 +248,10 @@ main {
     .project-box {
         flex: 1 1 auto;
         width: 100%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        gap: 20px;
     }
 }
