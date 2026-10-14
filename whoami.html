@@ -3,7 +3,7 @@
     <head>
         <link rel="stylesheet" href="css/style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1"> 
-        <title>Index</title>
+        <title>Who am I?</title>
     </head>
     <body>
         <header>
@@ -11,23 +11,29 @@
         </header>
         <nav>
             <ul class="topnav">
-                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="projecten.html">Projecten</a></li>
-                <li><a href="whoami.html">Who am I?</a></li>
+                <li><a class="active" href="whoami.html">Who am I?</a></li>
                 <li><a href="blog.html">Blog</a></li>
             </ul>
         </nav>
         <main>
             <div class="content">
-                <section>
-                    <h2>Introductie</h2>
-                    <p>Hoi, ik ben Patrick</p>
+                <section class="whoami-container">
+                    <div class="whoami-text">
+                        <h2>Introductie</h2>
+                        <p>Hoi, ik ben Patrick.</p>
+                    </div>
+                    <div class="whoami-img">
+                        <img src="img/NewFace.png" alt="Foto van Patrick">
+                    </div>
                 </section>
+                
                 <section class="container">
-                    <section>
+                    <section class="project-item">
                         <h3>Vaardigheden</h3>
-                        <p>Mijn vaardigheden...</p>
-                        <ul>
+                        <p>Mijn technische vaardigheden:</p>
+                        <ul class="styled-list">
                             <li>HTML</li>
                             <li>CSS</li>
                             <li>Java</li>
@@ -37,10 +43,11 @@
                             <li>SQL</li>
                         </ul>
                     </section>
-                    <section>
+                    
+                    <section class="project-item">
                         <h3>Hobby's / Interesses</h3>
-                        <p>Mijn hobby's en interesses...</p>
-                        <ul>
+                        <p>Wat ik in mijn vrije tijd doe:</p>
+                        <ul class="styled-list">
                             <li>Sporten</li>
                             <li>Gamen</li>
                             <li>Gitaar spelen</li>
@@ -54,20 +61,15 @@
         <footer>
             <div class="footer-container">
                 <div class="footer-box">
-                    <h3>Placeholder</h3>
-                    <p>Placeholder</p>
-                    <p>Placeholder</p>
-                </div>
-                <div class="footer-box">
-                    <h3>Contact</h3>
-                    <p>Placeholder</p>
+                    <h3>Heb je een specifieke vraag?</h3>
+                    <p><a href="contact.html">Contact</a></p>
                 </div>
                 <div class="footer-box">
                     <h3>Social Media</h3>
                     <p><a href="https://github.com/studentpatrickjansen" target="_blank" rel="noopener noreferrer">GitHub</a></p>
                     <p><a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
                 </div>
-            </div>
+            </div>        
         </footer>
     </body>
 </html>

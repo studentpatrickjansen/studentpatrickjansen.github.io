@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <title>Contact</title>
+    </head>
+    <body>
+        <header class="header">
+            <h1>Patrick's Portfolio</h1>     
+        </header>
+        <nav>
+            <ul class="topnav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projecten.html">Projecten</a></li>
+                <li><a href="whoami.html">Who am I?</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div class="content">
+                <section>
+                    <h2>Contact</h2>
+                    
+                    <form id="contact-form" novalidate>
+                        <div id="form-status" aria-live="polite"></div>
+
+                        <label for="naam">Naam</label>
+                        <input id="naam" required minlength="2" aria-describedby="naam-error" aria-invalid="false">
+                        <span id="naam-error" role="alert"></span>
+
+                        <label for="email">E-mail</label>
+                        <input id="email" type="email" required aria-describedby="email-error" aria-invalid="false">
+                        <span id="email-error" role="alert"></span>
+
+                        <label for="bericht">Bericht</label>
+                        <textarea id="bericht" required minlength="10" aria-describedby="bericht-error" aria-invalid="false"></textarea>
+                        <span id="bericht-error" role="alert"></span>
+
+                        <button type="submit">Versturen</button>
+                    </form>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-box">
+                    <h3>Heb je een specifieke vraag?</h3>
+                    <a href=contact.html>Contact</a>
+                </div>
+                <div class="footer-box">
+                    <h3>Social Media</h3>
+                    <p><a href="https://github.com/studentpatrickjansen" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+                    <p><a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+                </div>
+            </div>        
+        </footer>
+        <script src="js/contactScript.js"></script>
+    </body>
+</html>
